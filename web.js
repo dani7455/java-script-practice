@@ -159,7 +159,7 @@ if (scoreA1 > scoreB1){
 
  const num= Number('21'); ///////////end
 
-*/
+
  
 
 
@@ -183,7 +183,7 @@ if (scoreA1 > scoreB1){
  const prasentage = age2(1999);
  console.log(prasentage,'years old');
 
- 
+
 
 // arrow fiunctions///////
 
@@ -196,20 +196,55 @@ if (scoreA1 > scoreB1){
     const retirement =65 -age;
     return `${firstname} retirement in${retirement}years`;
  }
-  console.log(retirement(1991,"daniyelu"));
-  console.log(retirement(1998,"subbu"));
+ console.log(retirement(1999, "nandu"));
+
+*/
+///// function calling other functions//////
+
+ 
+ function fruit(apples,greps){
+    const juice=`juice with ${apples} apples and ${greps} greps`;
+    return juice;
 
 
+  } ;
 
 
+  const cutpieces =  function (fruit){
+    return fruit * 2;
+
+  };
+
+  const fruitprocessor = function (apples,greps){
+    const  applepices = cutpieces(apples);
+    const grepspices =cutpieces(greps);
+    const juice =`apples with ${applepices} piceces  greps with ${grepspices} pices`
+    return juice;
 
 
+  };    
+      console.log(fruitprocessor(2,3));
 
 
+      // practice function calling another function/////
+
+ function age (nandu,subbu){
+
+    const age1 =`nandu age ${nandu}years old and subbu age is ${subbu}years old `;
+    return age1 ;
+ };
+ const age2 = function(age){
+    return age *4;
+
+ }
+    const doubleage = function(nandu,subbu){
+        const nanduage = age2(nandu);
+        const subbuage =age2(subbu);
+        const age1 =`nandu age ${nanduage}years old and subbu age is ${subbuage}years old `;
+        return age1;
+
+    }
+        console.log(doubleage(5,6));
 
 
-
-
-
-
-
+ 
