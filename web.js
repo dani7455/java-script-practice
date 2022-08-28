@@ -301,3 +301,28 @@ const subbu = calcavarege(44,22,71);
  checkthewinner(557,48);
 
 
+
+
+ 
+   
+
+
+
+
+
+
+ /// introduction arrys ////
+
+const friend1 = 'subbu';
+const friend2 = 'rohith';
+const friend3 = 'nandu';
+
+const friends = ['subbu','rohith','nandu'];
+console.log(friends);
+
+const years = new Array(1999,1995,1996,1997);
+console.log(friends[0]);
+console.log(friends.length -1);
+
+friends[2] ='raju';
+ console.log(friends);
