@@ -269,7 +269,7 @@ const yearsleftretirement = function(birth, firstname){
 }
  console.log(yearsleftretirement(1991,"nandu"));
  console.log(yearsleftretirement(1998,"subbu"));
-*/
+
 
 
 
@@ -373,4 +373,38 @@ const bills =[125,555,44];
 const tips = [calctip(bills[0]),calctip(bills[1]),calctip(bills[2])];
 const  totals = [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
 console.log(bills,tips,totals); 
+
+
+
+*/
+
+////Dot.vs. bracket notation
+
+
+const subbu = {
+    firstName : 'subbu',
+    lastName :'myla',
+    age :2020-1995,
+    job :'softwere',
+    friends :['rohith ','venky','dani']
+
+};
+console.log(subbu);
+console.log(subbu.lastName);
+console.log(subbu['firstName']);
+
+const namekey ='Name';
+console.log(subbu['first'+ namekey]);
+console.log(subbu['last'+ namekey]);
+
+
+const intrestedin =prompt("what do you want to knnow about subbu ? choose between fristname, lastname, job, age,and friends");
+console.log(subbu.intrestedin);
+if(subbu[intrestedin]){
+    console.log(subbu[intrestedin])
+}else{
+    console.log('wrong request ,  what do you want to knnow about subbu ? choose between fristname, lastname, job, age,and friends ')
+}
+
+
 
