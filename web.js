@@ -247,4 +247,11 @@ if (scoreA1 > scoreB1){
         console.log(doubleage(5,6));
 
 
+        function hello (){
+            console.log ("hello");
+        }
+        hello();
+        
+
+
  
