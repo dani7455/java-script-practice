@@ -251,7 +251,4 @@ if (scoreA1 > scoreB1){
             console.log ("hello");
         }
         hello();
-        
-
-
  
