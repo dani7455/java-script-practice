@@ -405,7 +405,7 @@ if(subbu[intrestedin]){
     console.log('wrong request ,  what do you want to knnow about subbu ? choose between fristname, lastname, job, age,and friends ')
 }
 
-*/
+
 
 
 function hello() {
@@ -414,5 +414,18 @@ function hello() {
 }
 
 hello();
+*/
 
+const subbu = {
+  firstname: "myla",
+  lastname: "subbu",
+  age: 1997,
+  friends: ["rohith", "venky", "dani"],
+  license: true,
 
+  calcage: function () {
+    console.log(this);
+    return 2020 - subbu.age;
+  },
+};
+console.log(subbu.calcage());
