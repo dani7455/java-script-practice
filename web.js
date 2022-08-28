@@ -198,7 +198,7 @@ if (scoreA1 > scoreB1){
  }
  console.log(retirement(1999, "nandu"));
 
-*/
+
 ///// function calling other functions//////
 
  
@@ -245,6 +245,28 @@ if (scoreA1 > scoreB1){
 
     }
         console.log(doubleage(5,6));
+*/
 
 
- 
+
+
+// review fumctions ///////
+const calcage = function  (birth) {
+    return 2037-birth;
+
+}
+const yearsleftretirement = function(birth, firstname){
+    const age = calcage(birth);
+    const retirement =65 -age;
+
+    if (retirement >0){
+        console.log(`${firstname} retires in ${retirement}years`);
+        return retirement;
+    }else {
+        console.log(`${firstname} has already retired`);
+        return -1;
+    }
+}
+ console.log(yearsleftretirement(1991,"nandu"));
+ console.log(yearsleftretirement(1998,"subbu"));
+
