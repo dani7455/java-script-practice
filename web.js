@@ -376,7 +376,6 @@ console.log(bills,tips,totals);
 
 
 
-*/
 
 ////Dot.vs. bracket notation
 
@@ -406,5 +405,14 @@ if(subbu[intrestedin]){
     console.log('wrong request ,  what do you want to knnow about subbu ? choose between fristname, lastname, job, age,and friends ')
 }
 
+*/
+
+
+function hello() {
+    console.log ("hello world");
+
+}
+
+hello();
 
 
