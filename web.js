@@ -326,3 +326,34 @@ console.log(friends.length -1);
 
 friends[2] ='raju';
  console.log(friends);
+
+
+
+ 
+/// basic arrys inbilt/////
+//add elements
+const friends =['subbu', 'rohith', 'nandu'];
+friends.push('venky');
+console.log(friends);
+
+friends.unshift('dani');
+console.log(friends);
+
+//remove elements//
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+friends.shift();
+console.log(friends);   
+friends.push(25)
+
+console.log (friends.indexOf('subbu'));
+console.log (friends.includes('subbu'));
+console.log (friends.includes(25));
+console.log (friends.includes('nandu'));
+console.log(friends.includes('rohith'));
+
+if(friends.includes('rohith')){
+    console.log('a  friends called nandu');
+}
