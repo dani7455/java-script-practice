@@ -245,7 +245,7 @@ if (scoreA1 > scoreB1){
 
     }
         console.log(doubleage(5,6));
-*/
+
 
 
 
@@ -269,4 +269,35 @@ const yearsleftretirement = function(birth, firstname){
 }
  console.log(yearsleftretirement(1991,"nandu"));
  console.log(yearsleftretirement(1998,"subbu"));
+*/
+
+
+
+   
+
+
+ // coding challenge///////
+
+
+ const calcavarege = (a,b,c) =>(a+b+c)/3;
+ console.log(calcavarege(3,4,5));
+ // test 1//
+
+const subbu = calcavarege(44,22,71);
+ const dani =calcavarege(65,27,23);
+ console.log(subbu,dani);
+
+ const checkthewinner =function(avgsubbu,avgdani){
+    if (avgsubbu >= 2* avgdani){
+        console.log(`subbu win the match ${avgsubbu}vs  ${avgdani}`);
+    }else if (avgdani >=2 * avgsubbu){
+        console.log(`dani winthe match ${avgdani}vs ${avgsubbu}`);
+    }else{
+        console.log('no one win the match');
+    }
+    
+ }
+ checkthewinner(subbu,dani);
+ checkthewinner(557,48);
+
 
