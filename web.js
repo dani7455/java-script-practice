@@ -198,7 +198,11 @@ if (scoreA1 > scoreB1){
  }
  console.log(retirement(1999, "nandu"));
 
+<<<<<<< HEAD
+*/
+=======
 
+>>>>>>> 6f89d460f50215fc5715de69d9c6458260da8fb4
 ///// function calling other functions//////
 
  
@@ -247,6 +251,13 @@ if (scoreA1 > scoreB1){
         console.log(doubleage(5,6));
 
 
+<<<<<<< HEAD
+        function hello (){
+            console.log ("hello");
+        }
+        hello();
+ 
+=======
 
 
 
@@ -429,3 +440,9 @@ const subbu = {
   },
 };
 console.log(subbu.calcage());
+
+function hell(){
+    console.log("Hi There!");
+}
+
+hell();
