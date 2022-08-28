@@ -198,7 +198,11 @@ if (scoreA1 > scoreB1){
  }
  console.log(retirement(1999, "nandu"));
 
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 6f89d460f50215fc5715de69d9c6458260da8fb4
 ///// function calling other functions//////
 
  
@@ -247,8 +251,198 @@ if (scoreA1 > scoreB1){
         console.log(doubleage(5,6));
 
 
+<<<<<<< HEAD
         function hello (){
             console.log ("hello");
         }
         hello();
  
+=======
+
+
+
+// review fumctions ///////
+const calcage = function  (birth) {
+    return 2037-birth;
+
+}
+const yearsleftretirement = function(birth, firstname){
+    const age = calcage(birth);
+    const retirement =65 -age;
+
+    if (retirement >0){
+        console.log(`${firstname} retires in ${retirement}years`);
+        return retirement;
+    }else {
+        console.log(`${firstname} has already retired`);
+        return -1;
+    }
+}
+ console.log(yearsleftretirement(1991,"nandu"));
+ console.log(yearsleftretirement(1998,"subbu"));
+
+
+
+
+   
+
+
+ // coding challenge///////
+
+
+ const calcavarege = (a,b,c) =>(a+b+c)/3;
+ console.log(calcavarege(3,4,5));
+ // test 1//
+
+const subbu = calcavarege(44,22,71);
+ const dani =calcavarege(65,27,23);
+ console.log(subbu,dani);
+
+ const checkthewinner =function(avgsubbu,avgdani){
+    if (avgsubbu >= 2* avgdani){
+        console.log(`subbu win the match ${avgsubbu}vs  ${avgdani}`);
+    }else if (avgdani >=2 * avgsubbu){
+        console.log(`dani winthe match ${avgdani}vs ${avgsubbu}`);
+    }else{
+        console.log('no one win the match');
+    }
+    
+ }
+ checkthewinner(subbu,dani);
+ checkthewinner(557,48);
+
+
+
+
+ 
+   
+
+
+
+
+
+
+ /// introduction arrys ////
+
+const friend1 = 'subbu';
+const friend2 = 'rohith';
+const friend3 = 'nandu';
+
+const friends = ['subbu','rohith','nandu'];
+console.log(friends);
+
+const years = new Array(1999,1995,1996,1997);
+console.log(friends[0]);
+console.log(friends.length -1);
+
+friends[2] ='raju';
+ console.log(friends);
+
+
+
+ 
+/// basic arrys inbilt/////
+//add elements
+const friends =['subbu', 'rohith', 'nandu'];
+friends.push('venky');
+console.log(friends);
+
+friends.unshift('dani');
+console.log(friends);
+
+//remove elements//
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+friends.shift();
+console.log(friends);   
+friends.push(25)
+
+console.log (friends.indexOf('subbu'));
+console.log (friends.includes('subbu'));
+console.log (friends.includes(25));
+console.log (friends.includes('nandu'));
+console.log(friends.includes('rohith'));
+
+if(friends.includes('rohith')){
+    console.log('a  friends called nandu');
+};
+
+
+
+
+
+//coding challenge////
+
+const calctip =function(bill){
+    return bill >=50 && bill<= 300 ? bill*0.15:
+    bill*0.2;
+
+}
+const bills =[125,555,44];
+const tips = [calctip(bills[0]),calctip(bills[1]),calctip(bills[2])];
+const  totals = [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
+console.log(bills,tips,totals); 
+
+
+
+
+////Dot.vs. bracket notation
+
+
+const subbu = {
+    firstName : 'subbu',
+    lastName :'myla',
+    age :2020-1995,
+    job :'softwere',
+    friends :['rohith ','venky','dani']
+
+};
+console.log(subbu);
+console.log(subbu.lastName);
+console.log(subbu['firstName']);
+
+const namekey ='Name';
+console.log(subbu['first'+ namekey]);
+console.log(subbu['last'+ namekey]);
+
+
+const intrestedin =prompt("what do you want to knnow about subbu ? choose between fristname, lastname, job, age,and friends");
+console.log(subbu.intrestedin);
+if(subbu[intrestedin]){
+    console.log(subbu[intrestedin])
+}else{
+    console.log('wrong request ,  what do you want to knnow about subbu ? choose between fristname, lastname, job, age,and friends ')
+}
+
+
+
+
+function hello() {
+    console.log ("hello world");
+
+}
+
+hello();
+*/
+
+const subbu = {
+  firstname: "myla",
+  lastname: "subbu",
+  age: 1997,
+  friends: ["rohith", "venky", "dani"],
+  license: true,
+
+  calcage: function () {
+    console.log(this);
+    return 2020 - subbu.age;
+  },
+};
+console.log(subbu.calcage());
+
+function hell(){
+    console.log("Hi There!");
+}
+
+hell();
